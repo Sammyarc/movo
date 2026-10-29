@@ -1,0 +1,45 @@
+.story-section{position:relative;background:#f6efdf;color:#2b2115;padding-block:clamp(80px,9vw,144px)}
+.story-layout{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(40px,7.5vw,112px)}
+.story-content{padding-block:12px}
+.story-eyebrow{display:flex;align-items:center;gap:12px}
+.story-spark{display:inline-grid;place-items:center;width:32px;height:32px;border:1px solid #b39c7d;border-radius:50%;font-size:21px;line-height:1;color:#805133}
+.story-title{font-size:clamp(44px,5.8vw,86px);line-height:1.04;letter-spacing:-.065em;margin-block:24px 28px}
+.story-title em,.ritual-title em{font-weight:inherit;color:#805133}
+.story-lead{max-width:33ch;margin:0 0 20px;font-size:clamp(19px,1.7vw,25px);line-height:1.45;letter-spacing:-.025em}
+.story-copy{max-width:43ch;color:#65513c;margin:0 0 30px}
+.story-menu-link{display:inline-flex;align-items:center;gap:28px;min-height:44px}
+.story-menu-link span{font-size:24px;transition:transform .25s ease}
+.story-menu-link:hover span,.story-menu-link:focus-visible span{transform:translate(3px,-3px)}
+.story-footnote{display:flex;align-items:center;gap:28px;margin-top:clamp(36px,5vw,72px);padding-top:24px;border-top:1px solid #cbbba3}
+.story-small-wordmark{font-family:Georgia,"Times New Roman",serif;font-size:36px;font-weight:700;letter-spacing:-.08em;line-height:1}
+.story-footnote p{margin:0;color:#65513c;font-size:12px;line-height:1.5}
+.story-portrait{margin:0;min-width:0}
+.story-photo-frame{position:relative;overflow:hidden;aspect-ratio:4/5;border-radius:46% 46% 22px 22px;background:#dac7aa}
+.story-photo-frame img{display:block;width:100%;height:100%;object-fit:cover}
+.story-photo-note{position:absolute;right:20px;bottom:22px;display:grid;align-content:center;width:clamp(110px,11vw,150px);aspect-ratio:1;border-radius:50%;padding:15px;background:#f6efdf;color:#2b2115;text-align:center;font-family:Georgia,"Times New Roman",serif;font-size:clamp(20px,2vw,27px);line-height:1.06;letter-spacing:-.04em;box-shadow:0 6px 24px rgb(43 33 21 / 10%);transform:rotate(-9deg)}
+.story-portrait figcaption{display:flex;justify-content:space-between;gap:18px;padding-top:18px;color:#65513c;font-size:11px;line-height:1.5}
+.story-section a:focus-visible,.ritual-section a:focus-visible{outline-color:#70401e}
+.ritual-section{padding-block:clamp(80px,8.5vw,132px);background:#f6efdf;color:#2b2115}
+.ritual-heading-row{display:grid;grid-template-columns:1.15fr .85fr;align-items:end;gap:clamp(32px,6vw,88px);margin-bottom:clamp(36px,4.5vw,68px)}
+.ritual-title{font-size:clamp(44px,6vw,88px);letter-spacing:-.065em;line-height:1.04;margin-block:20px 0}
+.ritual-intro{max-width:36ch;justify-self:end;padding-bottom:8px}
+.ritual-intro p{color:#65513c;margin:0 0 22px}
+.ritual-intro .text-link{display:inline-flex;gap:28px;align-items:center;min-height:44px}
+.ritual-intro .text-link span{font-size:24px;transition:transform .25s ease}
+.ritual-intro .text-link:hover span,.ritual-intro .text-link:focus-visible span{transform:translate(3px,-3px)}
+.ritual-gallery{display:grid;grid-template-columns:1.15fr .85fr;gap:36px clamp(24px,3vw,44px)}
+.ritual-moment{margin:0;min-width:0}
+.ritual-morning{grid-row:span 2;display:flex;flex-direction:column}
+.ritual-image-wrap{overflow:hidden;position:relative;aspect-ratio:16/9;border-radius:18px;background:#dac7aa}
+.ritual-image-wrap img{width:100%;height:100%;display:block;object-fit:cover}
+.ritual-morning .ritual-image-wrap{flex:1;aspect-ratio:auto;min-height:500px;border-radius:24px 24px 100px 24px}
+.ritual-morning .ritual-image-wrap img{position:absolute;inset:0}
+.ritual-moment figcaption{display:flex;align-items:flex-start;gap:14px;padding-top:18px}
+.ritual-moment-number{font-size:11px;font-variant-numeric:tabular-nums;line-height:1.8;color:#65513c}
+.ritual-moment h3{font-size:clamp(16px,1.5vw,21px);font-weight:500;letter-spacing:-.035em;line-height:1.3;margin:0 0 4px}
+.ritual-moment figcaption p{font-size:13px;color:#65513c;margin:0;line-height:1.5}
+.ritual-time{margin-left:auto;font-size:10px;line-height:1.8;color:#65513c;text-align:right}
+@media(max-width:1000px){.story-layout{gap:36px}.story-title{font-size:clamp(44px,5.7vw,68px)}.story-desktop-break{display:none}.ritual-time{display:none}.ritual-morning .ritual-image-wrap{min-height:430px}.ritual-heading-row{gap:32px}}
+@media(max-width:700px){.story-layout{grid-template-columns:1fr;gap:40px}.story-content{padding:0}.story-title{font-size:clamp(44px,9.5vw,66px)}.story-copy{max-width:52ch}.story-footnote{margin-top:32px}.story-portrait{max-width:560px;width:100%;justify-self:center}.story-photo-frame{aspect-ratio:4/4.6}.story-photo-note{width:126px;font-size:24px}.ritual-heading-row{grid-template-columns:1fr;gap:24px}.ritual-title{font-size:clamp(44px,9.5vw,66px)}.ritual-intro{justify-self:start;max-width:46ch;padding:0}.ritual-gallery{grid-template-columns:1fr;gap:36px}.ritual-morning{grid-row:auto;display:block}.ritual-morning .ritual-image-wrap{aspect-ratio:4/5;min-height:0;border-radius:18px 18px 70px 18px}.ritual-image-wrap{aspect-ratio:4/3}.ritual-moment figcaption{padding-top:15px}.ritual-moment h3{font-size:19px}.ritual-moment figcaption p{font-size:13px}.ritual-time{display:block}}
+@media(max-width:380px){.story-title,.ritual-title{font-size:42px}.story-portrait figcaption{font-size:10px;gap:12px}.story-photo-note{width:110px;right:14px;bottom:16px;font-size:22px}.ritual-time{display:none}}
+@media(prefers-reduced-motion:reduce){.story-menu-link span,.ritual-intro .text-link span{transition:none}.story-menu-link:hover span,.story-menu-link:focus-visible span,.ritual-intro .text-link:hover span,.ritual-intro .text-link:focus-visible span{transform:none}}
